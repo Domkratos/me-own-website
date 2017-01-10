@@ -440,12 +440,12 @@ text-decoration: none;
 color: #2379a5;
 }
 .link-envelope {
-color: #1c1c1c;
+color: #4b6daa;
 }
 .link-envelope:hover,
 .link-envelope:focus {
 text-decoration: none;
-color: #020202;
+color: #3b5687;
 }
 .link-foursquare {
 color: #fa4778;
@@ -861,7 +861,7 @@ xsigin/signup popup
 	background-image: url("/img/icon-subject.svg");
 }
 .form label.message {
-	background-image: url("/img/icon-message.pngS");
+	background-image: url("/img/icon-message.png");
 }
 .form label.submit {
 	background-image: url("/img/icon-submit.svg")

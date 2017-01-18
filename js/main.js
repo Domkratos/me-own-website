@@ -74,6 +74,61 @@ $(document).ready(function() {
 		tabLogin.removeClass('selected');
 		tabContact.addClass('selected');
 	}
+// Will automatically generate current position lenght of time
+  Date.daysBetween = function( date1, date2 ) {
+    //Get 1 day in milliseconds
+    var oneDay=1000*60*60*24;
+
+    // Convert both dates to milliseconds
+    var date1Ms = date1.getTime();
+    var date2Ms = date2.getTime();
+
+    // Calculate the difference in milliseconds
+    var differenceMs = date2Ms - date1Ms;
+
+    // Convert back to days and return
+    return Math.round(differenceMs/oneDay);
+  }
+
+  //Set the two dates
+  var startDate = new Date(2016, 0, 4);
+  var currentDate = new Date();
+
+  //this will seperate months and days
+  function yearsMonths(x) {
+  	var years = 365;
+  	var days = 31;
+  	var remainder = x % years;
+  	var casio = remainder % days;
+  	year = (x - remainder) / years;
+  	month = (remainder - casio) / days;
+
+    //This will change the word to either year, years, or exclude it
+  	if(year == 1) {
+    	var yearResult = year + " year";
+    } else if(year > 1){
+    	var yearResult = year + " years";
+    } else {
+    	var yearResult = "";
+    }
+    //This will change the word to either month, months, or exclude it
+    if(month == 1) {
+    	var monthResult = month + " month";
+    } else if(month > 1){
+    	var monthResult = month + " months";
+    } else {
+    	var monthResult = "";
+    }
+  	var result = yearResult + " " + monthResult;
+
+  	return result;
+  }
+  // to inject into dom
+  var smallDates = yearsMonths(Date.daysBetween(startDate, currentDate));
+  $('#smallDates').html(smallDates);
+
+  var bigDates = yearsMonths(Date.daysBetween(startDate, currentDate));
+  $('#bigDates').html(bigDates);
 
 	//REMOVE THIS - it's just to show error messages
 	formLogin.find('input[type="submit"]').on('click', function(event){
@@ -130,6 +185,3 @@ jQuery.fn.putCursorAtEnd = function() {
     	}
 	});
 };
-
-
-

@@ -91,7 +91,7 @@ $(document).ready(function() {
   }
 
   //Set the two dates
-  var startDate = new Date(2016, 0, 4);
+  var startDate = new Date(2016, 0, 1);
   var currentDate = new Date();
 
   //this will seperate months and days

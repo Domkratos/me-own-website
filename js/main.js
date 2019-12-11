@@ -92,7 +92,7 @@ $(document).ready(function() {
   }
 
   //Set the two dates
-  var startDate = new Date(2018, 9, 10);
+  var startDate = new Date(2018, 9, 10); //YEAR MONTH DAY ZERO INDEXED
   var currentDate = new Date();
 
   //this will seperate months and days

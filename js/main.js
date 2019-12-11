@@ -74,7 +74,7 @@ $(document).ready(function() {
 		tabLogin.removeClass('selected');
 		tabContact.addClass('selected');
 	}
-  
+
 // Will automatically generate current position lenght of time
   Date.daysBetween = function( date1, date2 ) {
     //Get 1 day in milliseconds
@@ -92,7 +92,7 @@ $(document).ready(function() {
   }
 
   //Set the two dates
-  var startDate = new Date(2018, 0, 10);
+  var startDate = new Date(2018, 9, 10);
   var currentDate = new Date();
 
   //this will seperate months and days

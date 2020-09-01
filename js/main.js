@@ -92,7 +92,7 @@ $(document).ready(function() {
   }
 
   //Set the two dates
-  var startDate = new Date(2020, 2, 0); //YEAR MONTH DAY ZERO INDEXED
+  var startDate = new Date(2020, 1, 1); //YEAR MONTH DAY ZERO INDEXED
   var currentDate = new Date();
 
   //this will seperate months and days

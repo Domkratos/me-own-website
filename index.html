@@ -15,628 +15,621 @@
     <script src="js/main.js" type="javascript"></script>
 </head>
 <body itemscope itemtype="http://schema.org/Person">
-<div class="container-fluid">
-    <div class="row main clearfix">
-        <a class="js-floating-nav-trigger floating-nav-trigger" src="css/style.css">
-            <i class="fa fa-bars"></i>
-            <span class="close-icon">&times;</span>
-        </a>
-        <nav class="floating-nav js-floating-nav">
-            <ul class="list-unstyled">
-                <li>
-                    <a href="#about">
-                        <i class="fa fa-user"></i>
-                        About
-                    </a>
-                </li>
-                <li>
-                    <a href="#work-experience">
-                        <i class="fa fa-building"></i>
-                        Work Experience
-                    </a>
-                </li>
-                <li>
-                    <a href="#skills">
-                        <i class="fa fa-code"></i>
-                        Skills
-                    </a>
-                </li>
-                <li>
-                    <a href="#education">
-                        <i class="fa fa-mortar-board"></i>
-                        Education
-                    </a>
-                </li>
-            </ul>
-        </nav>
+    <div class="container-fluid">
+        <div class="row main clearfix">
+            <a class="js-floating-nav-trigger floating-nav-trigger" src="css/style.css">
+                <i class="fa fa-bars"></i>
+                <span class="close-icon">&times;</span>
+            </a>
+            <nav class="floating-nav js-floating-nav">
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="#about">
+                            <i class="fa fa-user"></i>
+                            About
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#work-experience">
+                            <i class="fa fa-building"></i>
+                            Work Experience
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#skills">
+                            <i class="fa fa-code"></i>
+                            Skills
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#education">
+                            <i class="fa fa-mortar-board"></i>
+                            Education
+                        </a>
+                    </li>
+                </ul>
+            </nav>
 
-        <section class="col-md-3 card-wrapper profile-card-wrapper affix">
-            <div class="card profile-card">
-              <span class="profile-pic-container">
-                <div class="profile-pic">
-						 <img alt="Dominic Kratos" class="media-object img-circle center-block" data-src="holder.js"
-                              itemprop="image"
-                              src="https://s.gravatar.com/avatar/a29b64d9e3f8fd601fd45563c6a3708a?s=80">
-					 </div>
+            <section class="col-md-3 card-wrapper profile-card-wrapper affix">
+                <div class="card profile-card">
+                  <span class="profile-pic-container">
+                    <div class="profile-pic">
+                       <img alt="Dominic Kratos" class="media-object img-circle center-block" data-src="holder.js"
+                       itemprop="image"
+                       src="https://s.gravatar.com/avatar/a29b64d9e3f8fd601fd45563c6a3708a?s=80">
+                   </div>
 
-                <div class="name-and-profession">
-						 <h3 class="text-center text-bolder name" itemprop="name"> Dominic Kratos</h3>
-						 <h5 class="text-muted text-center" itemprop="jobTitle">DevOps Software Engineer</h5>
-					 </div>
-              </span>
-                <hr>
+                   <div class="name-and-profession">
+                       <h3 class="text-center text-bolder name" itemprop="name"> Dominic Kratos</h3>
+                       <h5 class="text-muted text-center" itemprop="jobTitle">DevOps Software Engineer</h5>
+                   </div>
+               </span>
+               <hr>
 
-                <div class="contact-details clearfix">
-                    <div class="detail">
+               <div class="contact-details clearfix">
+                <div class="detail">
                     <span class="icon">
                       <i class="fa fa-lg fa-location-arrow"></i>
-                    </span>
+                  </span>
 
-                        <span class="info">
-                        Albuquerque, New Mexico,
-                        US
-                      </span>
-                    </div>
-                </div>
-
-                <hr>
-                <div class="social-links text-center">
-                    <a class="fa fa-linkedin fa-2x social-link link-linkedin"
-                       href="https://www.linkedin.com/in/dominic-kratos-75314613?trk=hp-identity-name"
-                       target="_blank"></a>
-                    <a class="fa fa-github fa-2x social-link link-github"
-                       href="https://github.com/Domkratos" target="_blank"></a>
-                    <a class="fa fa-stack-overflow fa-2x social-link link-stackoverflow"
-                       href="https://stackoverflow.com/users/5895824/dominic-kratos" target="_blank"></a>
-                    <!-- This is where you're going to make the link for contact form -->
-                    <p class="fa fa-envelope-o fa-2x social-link link-envelope" href="#0" target="_blank"></p>
-                </div>
+                  <span class="info">
+                    Albuquerque, New Mexico,
+                    US
+                </span>
             </div>
-        </section>
-        <div class="contact-modal"> <!-- this is the entire modal form, including the background -->
-            <div class="contact-modal-container"> <!-- this is the container wrapper -->
-                <p class="contact-me">
-                    Contact Me
-                </p>
-                <!-- contact form -->
-                <!--<div id="contact" class="is-selected">-->
-                <form action="php-libs/email.php" class="form" enctype="multipart/form-data" id="contact-form"
-                      method="post">
-                    <p class="fieldset">
-                        <label class="image-replace name" for="name">Name</label>
-                        <input class="full-width has-padding has-border" id="name" name="name" placeholder="Name"
-                               type="text">
-                        <span class="error-message">Error message here!</span>
-                    </p>
-
-                    <p class="fieldset">
-                        <label class="image-replace email" for="email">E-mail</label>
-                        <input class="full-width has-padding has-border" id="email" name="email" placeholder="E-mail"
-                               type="email">
-                        <span class="error-message">Error message here!</span>
-                    </p>
-
-                    <p class="fieldset">
-                        <label class="image-replace subject" for="subject">Subject</label>
-                        <input class="full-width has-padding has-border" id="subject" name="subject" placeholder="Subject"
-                               type="text">
-                        <span class="error-message">Error message here!</span>
-                    </p>
-
-                    <p class="fieldset">
-                        <label class="image-replace message" for="message">Message</label>
-                        <input class="full-width has-padding has-border" id="message" name="message" placeholder="Message"
-                               type="text">
-                        <span class="error-message">Error message here!</span>
-                    </p>
-
-                    <p class="fieldset">
-                        <input class="image-replace submit full-width has-padding" type="submit" value="Send">
-                    </p>
-                    <div id="output-area"></div>
-                </form>
-                <a class="close-form" href="#0">Close</a>
-                <!--</div>-->
-                <!-- contact -->
-
-                <p class="form-bottom-message"><a href="#0">Close</a></p>
-                <a class="close-form" href="#0">Close</a>
-            </div>
-
-            <!-- contact-modal-container -->
         </div>
-        <section class="col-md-9 card-wrapper pull-right">
-            <div class="card background-card">
-                <h4 class="text-uppercase text-bolder">Background</h4>
-                <hr>
 
-                <div class="background-details">
-                    <div class="detail" id="about">
-                        <div class="icon">
-                            <i class="fa fa-lg fa-user"></i>
-                            <span class="mobile-title">About</span>
-                        </div>
-                        <div class="info">
-                            <h4 class="title text-uppercase">
-                                About
-                            </h4>
+        <hr>
+        <div class="social-links text-center">
+            <a class="fa fa-linkedin fa-2x social-link link-linkedin"
+            href="https://www.linkedin.com/in/dominic-kratos-75314613?trk=hp-identity-name"
+            target="_blank"></a>
+            <a class="fa fa-github fa-2x social-link link-github"
+            href="https://github.com/Domkratos" target="_blank"></a>
+            <a class="fa fa-stack-overflow fa-2x social-link link-stackoverflow"
+            href="https://stackoverflow.com/users/5895824/dominic-kratos" target="_blank"></a>
+            <!-- This is where you're going to make the link for contact form -->
+            <p class="fa fa-envelope-o fa-2x social-link link-envelope" href="#0" target="_blank"></p>
+        </div>
+    </div>
+</section>
+<div class="contact-modal"> <!-- this is the entire modal form, including the background -->
+    <div class="contact-modal-container"> <!-- this is the container wrapper -->
+        <p class="contact-me">
+            Contact Me
+        </p>
+        <!-- contact form -->
+        <!--<div id="contact" class="is-selected">-->
+            <form action="php-libs/email.php" class="form" enctype="multipart/form-data" id="contact-form"
+            method="post">
+            <p class="fieldset">
+                <label class="image-replace name" for="name">Name</label>
+                <input class="full-width has-padding has-border" id="name" name="name" placeholder="Name"
+                type="text">
+                <span class="error-message">Error message here!</span>
+            </p>
 
-                            <div class="content" itemprop="description">
-                                Highly skilled DevOps Engineer with design and software development experience. Rooted
-                                in Agile Methodology.
-                                Proficient in a wide variety of programming languages, frameworks, databases.
-                                Passionate about crafting highly scalable reliable software solutions from design to
-                                implementation and deployment.
-                            </div>
-                        </div>
+            <p class="fieldset">
+                <label class="image-replace email" for="email">E-mail</label>
+                <input class="full-width has-padding has-border" id="email" name="email" placeholder="E-mail"
+                type="email">
+                <span class="error-message">Error message here!</span>
+            </p>
+
+            <p class="fieldset">
+                <label class="image-replace subject" for="subject">Subject</label>
+                <input class="full-width has-padding has-border" id="subject" name="subject" placeholder="Subject"
+                type="text">
+                <span class="error-message">Error message here!</span>
+            </p>
+
+            <p class="fieldset">
+                <label class="image-replace message" for="message">Message</label>
+                <input class="full-width has-padding has-border" id="message" name="message" placeholder="Message"
+                type="text">
+                <span class="error-message">Error message here!</span>
+            </p>
+
+            <p class="fieldset">
+                <input class="image-replace submit full-width has-padding" type="submit" value="Send">
+            </p>
+            <div id="output-area"></div>
+        </form>
+        <a class="close-form" href="#0">Close</a>
+        <!--</div>-->
+        <!-- contact -->
+
+        <p class="form-bottom-message"><a href="#0">Close</a></p>
+        <a class="close-form" href="#0">Close</a>
+    </div>
+
+    <!-- contact-modal-container -->
+</div>
+<section class="col-md-9 card-wrapper pull-right">
+    <div class="card background-card">
+        <h4 class="text-uppercase text-bolder">Background</h4>
+        <hr>
+
+        <div class="background-details">
+            <div class="detail" id="about">
+                <div class="icon">
+                    <i class="fa fa-lg fa-user"></i>
+                    <span class="mobile-title">About</span>
+                </div>
+                <div class="info">
+                    <h4 class="title text-uppercase">
+                        About
+                    </h4>
+
+                    <div class="content" itemprop="description">
+                        Highly skilled Senior DevOps Engineer with design and software development experience. Rooted in Agile
+                        Methodology. Proficient in a wide variety of programming languages, frameworks, databases.
+                        Passionate about crafting highly scalable reliable software solutions
+                        from design to implementation and deployment.
                     </div>
+                </div>
+            </div>
 
-                    <div class="detail" id="work-experience">
-                        <div class="icon">
-                            <i class="fa fa-lg fa fa-folder-open"></i>
-                            <span class="mobile-title">Experience</span>
-                        </div>
-                        <div class="info">
-                            <h4 class="title text-uppercase">
-                                Experience
-                            </h4>
+            <div class="detail" id="work-experience">
+                <div class="icon">
+                    <i class="fa fa-lg fa fa-folder-open"></i>
+                    <span class="mobile-title">Experience</span>
+                </div>
+                <div class="info">
+                    <h4 class="title text-uppercase">
+                        Experience
+                    </h4>
 
-                            <ul class="list-unstyled">
+                    <ul class="list-unstyled">
 
-                                <!-- current position  -->
-                                <li class="card card-nested clearfix">
-                                    <div class="content has-sidebar">
-                                        <p class="clear-margin-sm">
-                                            <strong>Software Developer</strong>,&nbsp;SAIC - Sandia National Labs -
-                                            sEPM Group
-                                        </p>
-                                        <p class="text-muted visible-xs visible-sm">
-                                            <small>
-			                            <span class="space-right">
-			                              Oct, 2018 - Present
-			                            </span>
-                                                <span>
-			                              <i class="fa fa-clock-o icon-left"></i>
-			                              <i id="smallDates"></i>
-			                            </span>
-                                            </small>
-                                        </p>
-                                        <ul>
-					    <li>
-					 	Developed Project Management web tool using Meteor.js with a MongoDB backend  
-					    </li>
-					    <li>
-						Setup, maintained, and deployed Docker containers and Kubernetees clusters on Azure
-					    </li>	
-                                            <li>
-                                                Directly work with Sandia Project Management Office to identify needs
-                                                for Risk Estimating, Project, and Finance tracking software
-                                            </li>
-                                            <li>
-                                                Function as a team member in design, development, troubleshooting,
-                                                testing, and analysis of medium to large scale software projects,
-                                                involving planning and cost software
-                                            </li>
-                                            <li>
-                                                Design and execute test cases, analyze output for validity, and prepare
-                                                written reports documenting results
-                                            </li>
-                                            <li>
-                                                Create CI/CD pipelines to ensure quick and rapid deployments
-                                            </li>
-                                            <li>
-                                                Participate in strategic technology planning.
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="sidebar text-muted text-center hidden-xs hidden-sm">
-                                        <p>
-                                            <strong>Joined:</strong>&nbsp; Oct, 2018
-                                        </p>
-
-                                        <p>
-                                            <strong>Present</strong>&nbsp;
-                                        </p>
-                                        <p>
-                                            <i class="fa fa-clock-o icon-left"></i>
-                                            <i id="bigDates"></i>
-                                        </p>
-                                    </div>
+                        <!-- current position  -->
+                        <li class="card card-nested clearfix">
+                            <div class="content has-sidebar">
+                                <p class="clear-margin-sm">
+                                    <strong>Senior DevOps Software Engineer</strong>,&nbsp;SAIC - Sandia National Labs
+                                </p>
+                                <p class="text-muted visible-xs visible-sm">
+                                    <small>
+                                       <span class="space-right">
+                                         Oct, 2018 - Present
+                                     </span>
+                                     <span>
+                                         <i class="fa fa-clock-o icon-left"></i>
+                                         <i id="smallDates"></i>
+                                     </span>
+                                 </small>
+                             </p>
+                             <ul>
+                                <li>
+                                    Migrated 40+ customers existing K8s clusters to Red Hat OpenShift
                                 </li>
-
-                                <!-- Kemtah Belcan -->
-                                <li class="card card-nested clearfix">
-                                    <div class="content has-sidebar">
-                                        <p class="clear-margin-sm">
-                                            <strong>Unix Rover</strong>,&nbsp;The Kemtah Group, A Belcan Company
-                                        </p>
-                                        <p class="text-muted visible-xs visible-sm">
-                                            <small>
-														<span class="space-right">
-															Apr, 2017 - Oct, 2018
-														</span>
-                                                <span>
-															<i class="fa fa-clock-o icon-left"></i>
-                              1 year 6 months
-                                                    <!-- <p id="smallDates"></p> -->
-														</span>
-                                            </small>
-                                        </p>
-                                        <ul>
-                                            <li>
-                                                Stringently follow corporate security guidelines and policies while
-                                                offering the best support to end users
-                                            </li>
-                                            <li>
-                                                Setup and configure licensing servers for corporate software
-                                                authentication service
-                                            </li>
-                                            <li>
-                                                Administer Active Directory including GPO and OU changes
-                                            </li>
-                                            <li>
-                                                Provide setup and support for lab equipment controllers and workstations
-                                                that require extreme precision
-                                            </li>
-                                            <li>
-                                                Troubleshoot and isolate network related incidents and determine site
-                                                impact
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="sidebar text-muted text-center hidden-xs hidden-sm">
-                                        <p>
-                                            <strong>Joined:</strong>&nbsp; Apr, 2017
-                                        </p>
-
-                                        <p>
-                                            <strong>Left:</strong>&nbsp; Oct, 2018
-                                        </p>
-                                        <p>
-                                            <i class="fa fa-clock-o icon-left"></i>
-                                            1 year 6 Months
-                                            <!-- <p id="bigDates"></p> -->
-                                        </p>
-                                    </div>
+                                <li>
+                                    Fully automated all new setup tasks with Ansible
                                 </li>
-
-                                <!-- Atomic Dev -->
-
-                                <li class="card card-nested clearfix">
-                                    <div class="content has-sidebar">
-                                        <p class="clear-margin-sm">
-                                            <strong>Software Engineer</strong>,&nbsp;Atomic Development
-                                        </p>
-                                        <p class="text-muted visible-xs visible-sm">
-                                            <small>
-														<span class="space-right">
-															Jan, 2016 - Present
-														</span>
-                                                <span>
-															<i class="fa fa-clock-o icon-left"></i>
-															<i id="smallDates"></i>
-														</span>
-                                            </small>
-                                        </P>
-                                        <ul>
-                                            <li>
-                                                Research, design, and implement scalable applications for information
-                                                identification,
-                                                extraction, analysis, retrieval, and indexing.
-                                            </li>
-                                            <li>
-                                                Designed UML models to guide the project to completion
-                                            </li>
-                                            <li>
-                                                Design, develop and documentation of REST APIs for collection from
-                                                project(s) MySQL database
-                                            </li>
-                                            <li>
-                                                Participate in strategic technology planning.
-                                            </li>
-                                            <li>
-                                                Implemented CSS, and JavaScript to the web application to make it
-                                                visually aesthetic and
-                                                functional for the end user
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="sidebar text-muted text-center hidden-xs hidden-sm">
-                                        <p>
-                                            <strong>Joined:</strong>&nbsp;
-                                            Jan, 2016
-                                        </p>
-
-                                        <p>
-                                            <strong>Left:</strong>&nbsp;
-                                            Apr, 2017
-                                        </p>
-                                        <p>
-                                            <i class="fa fa-clock-o icon-left"></i>
-                                            1 Year 3 Months
-
-                                        </p>
-                                    </div>
+                                <li>
+                                    Configured and managed High Availability Hashicorps Consul and Vault instances to be used by 40+ customers and projects
                                 </li>
-                                <li class="card card-nested clearfix">
-                                    <div class="content has-sidebar">
-                                        <p class="clear-margin-sm">
-                                            <strong>Linux System Administrator</strong>,&nbsp;Wellbridge
-                                        </p>
-                                        <p class="text-muted visible-xs visible-sm">
-                                            <small>
-                              <span class="space-right">
-                                Apr, 2012 -
-                                  Dec, 2015
-                              </span>
-
-                                                <span>
-                                  <i class="fa fa-clock-o icon-left"></i>
-                                  3 years 6 months
-                                </span>
-                                            </small>
-                                        </p>
-                                        <p>
-                                        </p>
-                                        <ul>
-                                            <li>
-                                                Member of Information Technolgy team.
-                                            </li>
-                                            <li>
-                                                Experience in the support of fundamental technologies such as DNS, SFTP
-                                                and FTP, SMTP, SNMP, LDAP, SSL, SSH, TCP, UDP, IP, RAID, TFTP, BOOTP,
-                                                DHCP, Kerberos, and SMB and CIFS.
-                                            </li>
-                                            <li>
-                                                Extensively used Python to automate tasks
-                                            </li>
-                                            <li>
-                                                Expertise in Linux system installation, configuration, administration,
-                                                the development and testing of backup and recovery methodologies,
-                                                troubleshooting, capacity and performance planning, performance tuning,
-                                                preventative maintenance, monitoring and alerting setup and security
-                                                hardening.
-                                            </li>
-                                            <li>
-                                                Expertise as an Oracle DBA and Oracle Application DBA, along with solid
-                                                experience developing in SQL and PL and SQL
-                                            </li>
-                                        </ul>
-                                    </div>
-
-                                    <div class="sidebar text-muted text-center hidden-xs hidden-sm">
-                                        <p>
-                                            <strong>Joined:</strong>&nbsp;
-                                            Apr, 2012
-                                        </p>
-
-                                        <p>
-                                            <strong>Left:</strong>&nbsp;
-                                            Dec, 2015
-                                        </p>
-                                        <p>
-                                            <i class="fa fa-clock-o icon-left"></i>
-                                            3 years 6 months
-                                        </p>
-                                    </div>
+                                <li>
+                                    Configured HAProxy and Nginx Proxy as reverse proxies in order to reach microservices as context paths
                                 </li>
-                                <li class="card card-nested clearfix">
-                                    <div class="content has-sidebar">
-                                        <p class="clear-margin-sm">
-                                            <strong>Technical Support</strong>,&nbsp;AeroTek
-                                        </p>
-                                        <p class="text-muted visible-xs visible-sm">
-                                            <small>
-                              <span class="space-right">
-                                Apr, 2009 -
-                                  Apr, 2012
-                              </span>
-
-                                                <span>
-                                  <i class="fa fa-clock-o icon-left"></i>
-                                  3 years
-                                </span>
-                                            </small>
-                                        </p>
-                                        <p></p>
-                                        <ul>
-                                            <li>
-                                                Provided solutions and technical guidance to clients facing technical
-                                                issues and difficulties.
-                                            </li>
-                                            <li>
-                                                Installed and configured IT network components and assisted in the
-                                                implementation of designed IT network configuration.
-                                            </li>
-                                            <li>
-                                                Take part in the redesigning of applications and other software
-                                            </li>
-                                            <li>
-                                                Communicate electronically and personally with computer end users
-                                                experiencing problems in order to identify and document problem
-                                            </li>
-                                        </ul>
-                                    </div>
-
-                                    <div class="sidebar text-muted text-center hidden-xs hidden-sm">
-                                        <p>
-                                            <strong>Joined:</strong>&nbsp;
-                                            Apr, 2009
-                                        </p>
-
-                                        <p>
-                                            <strong>Left:</strong>&nbsp;
-                                            Apr, 2012
-                                        </p>
-                                        <p>
-                                            <i class="fa fa-clock-o icon-left"></i>
-                                            3 years
-                                        </p>
-                                    </div>
+                                <li>
+                                    Researched and evaluated related technologies and ensured optimal design that supported the organization’s mission
                                 </li>
-                                <li class="card card-nested clearfix">
-                                    <div class="content has-sidebar">
-                                        <p class="clear-margin-sm">
-                                            <strong>Contract PC Technician</strong>,&nbsp;Tek Systems
-                                        </p>
-                                        <p class="text-muted visible-xs visible-sm">
-                                            <small>
-                              <span class="space-right">
-                                May, 2007 -
-                                  Apr, 2009
-                              </span>
-
-                                                <span>
-                                  <i class="fa fa-clock-o icon-left"></i>
-                                  1 year 11 months
-                                </span>
-                                            </small>
-                                        </p>
-                                        <p></p>
-                                        <ul>
-                                            <li>
-                                                Implemented interfaces connecting legacy components to the existing
-                                                enterprise infrastructure
-                                            </li>
-                                            <li>
-                                                Optimized existing software products to considerably enhance performance
-                                            </li>
-                                            <li>
-                                                Setup, and optimized LAN systems, on networks ranging from 50 units, to
-                                                as large as 1000+
-                                            </li>
-                                            <li>
-                                                Configured user accounts on large business networks
-                                            </li>
-                                            <li>
-                                                Removed network wide virus/malware infection
-                                            </li>
-                                        </ul>
-                                    </div>
-
-                                    <div class="sidebar text-muted text-center hidden-xs hidden-sm">
-                                        <p>
-                                            <strong>Joined:</strong>&nbsp;
-                                            May, 2007
-                                        </p>
-                                        <p>
-                                            <strong>Left:</strong>&nbsp;
-                                            Apr, 2009
-                                        </p>
-                                        <p>
-                                            <i class="fa fa-clock-o icon-left"></i>
-                                            1 year 11 months
-                                        </p>
-                                    </div>
+                                <li>
+                                    Managed and maintained certificates for reverse proxies to ensure secure communication between endpoint and end user browser
+                                </li>
+                                <li>
+                                    Handled implementation of cyber security required software and configurations in order to comply with SecOps standards
+                                </li>
+                                <li>
+                                    Created Ansible Playbooks to automate software deployment, system updates and software upgrades via Ansible Tower
                                 </li>
                             </ul>
                         </div>
-                    </div>
-                    <div class="detail" id="skills">
-                        <div class="icon">
-                            <i class="fa fa-lg fa-code"></i>
-                            <span class="mobile-title">Skills</span>
-                        </div>
-                        <div class="info">
-                            <h4 class="title text-uppercase">
-                                Skills
-                            </h4>
+                        <div class="sidebar text-muted text-center hidden-xs hidden-sm">
+                            <p>
+                                <strong>Joined:</strong>&nbsp; Oct, 2018
+                            </p>
 
-                            <div class="content">
-                                <ul class="list-unstyled">
-                                    <li class="card card-nested card-skills">
-                                        <div class="skill-info">
-                                            <strong>Software Engineering</strong>
-                                            <div class="space-top labels">
-                                           <span class="label label-keyword">Jenkins</span>
-                                           <span class="label label-keyword">CI/CD Git Pipelines</span>
-                                           <span class="label label-keyword">Selenium</span>
-                                           <span class="label label-keyword">OpenShift</span>
-                                           <span class="label label-keyword">Ansible</span>
-                                           <span class="label label-keyword">Azure</span>
-                                           <span class="label label-keyword">Docker-Compose</span>
-                                           <span class="label label-keyword">VSphere</span>
-                                           <span class="label label-keyword">Docker</span>
-                                           <span class="label label-keyword">Kubernetes</span>
-                                           <span class="label label-keyword">Mongo DB</span>
-                                           <span class="label label-keyword">GitLab</span>
-                                           <span class="label label-keyword">Node.js</span>
-                                           <span class="label label-keyword">Meteor.js</span>
-                                           <span class="label label-keyword">Python</span>
-                                           <span class="label label-keyword">PHP</span>
-                                           <span class="label label-keyword">C++</span>
-                                           <span class="label label-keyword">JavaScript</span>
-                                           <span class="label label-keyword">MSSQL</span>
-                                           <span class="label label-keyword">MySQL</span>
-                                           <span class="label label-keyword">Oracle SQL</span>
-                                           <span class="label label-keyword">SQL</span>
-                                           <span class="label label-keyword">CSS</span>
-                                           <span class="label label-keyword">Bootstrap</span>
-                                           <span class="label label-keyword">Linux</span>
-                                           <span class="label label-keyword">Git</span>
-                                           <span class="label label-keyword">Laravel</span>
-                                           <span class="label label-keyword">CakePHP</span>
-                                           <span class="label label-keyword">Backbone.js</span>
-                                           <span class="label label-keyword">Angular</span>
-                                           <span class="label label-keyword">Debian Linux</span>
-                                           <span class="label label-keyword">Visual Studio</span>
-                                           <span class="label label-keyword">Jquery</span>
-                                           <span class="label label-keyword">JSON</span>
-                                           <span class="label label-keyword">XML</span>
-                                           <span class="label label-keyword">YAML</span>
-                                            </div>
-                                        </div>
-                                    </li>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
+                            <p>
+                                <strong>Present</strong>&nbsp;
+                            </p>
+                            <p>
+                                <i class="fa fa-clock-o icon-left"></i>
+                                <i id="bigDates"></i>
+                            </p>
                         </div>
-                    </div>
-                    <div class="detail" id="education">
-                        <div class="icon">
-                            <i class="fa fa-lg fa-mortar-board"></i>
-                            <span class="mobile-title">Education</span>
-                        </div>
-                        <div class="info">
-                            <h4 class="title text-uppercase">
-                                Education
-                            </h4>
-                            <div class="content">
-                                <ul class="list-unstyled">
-                                    <li class="card card-nested">
-                                        <div class="content has-sidebar">
-                                            <p class="clear-margin-sm">
-                                                <strong>Pursued Bachelor of Science in Communication</strong>,&nbsp;
-                                                University of New Mexico
-                                            </p>
-                                            <p class="visible-xs visible-sm text-muted">
-                                                <small>
-                                                    Jul, 2003
-                                                </small>
-                                            </p>
-                                            <i></i>
-                                            <div class="space-top labels">
-                                            </div>
-                                        </div>
-                                        <div class="sidebar text-muted text-center hidden-xs hidden-sm">
-                                            <p>
-                                                <strong>Started:</strong>&nbsp;
-                                                Jul, 2003
-                                            </p>
-<!--                                            <p>-->
-<!--                                                <strong>Completion:</strong>&nbsp;-->
-<!--                                            </p>-->
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+                    </li>
+
+                    <!-- Kemtah Belcan -->
+                    <li class="card card-nested clearfix">
+                        <div class="content has-sidebar">
+                            <p class="clear-margin-sm">
+                                <strong>Linux Server Admin</strong>,&nbsp;The Kemtah Group, A Belcan Company
+                            </p>
+                            <p class="text-muted visible-xs visible-sm">
+                                <small>
+                                  <span class="space-right">
+                                   Apr, 2017 - Oct, 2018
+                               </span>
+                               <span>
+                                   <i class="fa fa-clock-o icon-left"></i>
+                                   1 year 6 months
+                                   <!-- <p id="smallDates"></p> -->
+                               </span>
+                           </small>
+                       </p>
+                       <ul>
+                        <li>
+                            Stringently follow corporate security guidelines and policies while
+                            offering the best support to end users
+                        </li>
+                        <li>
+                            Setup and configure licensing servers for corporate software
+                            authentication service
+                        </li>
+                        <li>
+                            Administer Active Directory including GPO and OU changes
+                        </li>
+                        <li>
+                            Provide setup and support for lab equipment controllers and workstations
+                            that require extreme precision
+                        </li>
+                        <li>
+                            Troubleshoot and isolate network related incidents and determine site
+                            impact
+                        </li>
+                    </ul>
                 </div>
-            </div>
-        </section>
+                <div class="sidebar text-muted text-center hidden-xs hidden-sm">
+                    <p>
+                        <strong>Joined:</strong>&nbsp; Apr, 2017
+                    </p>
+
+                    <p>
+                        <strong>Left:</strong>&nbsp; Oct, 2018
+                    </p>
+                    <p>
+                        <i class="fa fa-clock-o icon-left"></i>
+                        1 year 6 Months
+                        <!-- <p id="bigDates"></p> -->
+                    </p>
+                </div>
+            </li>
+
+            <!-- Atomic Dev -->
+
+            <li class="card card-nested clearfix">
+                <div class="content has-sidebar">
+                    <p class="clear-margin-sm">
+                        <strong>Software Engineer</strong>,&nbsp;Atomic Development
+                    </p>
+                    <p class="text-muted visible-xs visible-sm">
+                        <small>
+                          <span class="space-right">
+                           Jan, 2016 - Present
+                       </span>
+                       <span>
+                           <i class="fa fa-clock-o icon-left"></i>
+                           <i id="smallDates"></i>
+                       </span>
+                   </small>
+               </P>
+               <ul>
+                    <li>
+                        Research, design, and implement scalable applications for information
+                        identification, extraction, analysis, retrieval, and indexing.
+                    </li>
+                    <li>
+                        Designed UML models to guide the project to completion
+                    </li>
+                    <li>
+                        Design, develop and documentation of REST APIs for collection from project(s)
+                        MySQL database
+                    </li>
+                    <li>
+                        Participate in strategic technology planning.
+                    </li>
+                    <li>
+                        Implemented CSS, and JavaScript to the web application to make it visually
+                        aesthetic and functional for the end user
+                    </li>
+            </ul>
+        </div>
+        <div class="sidebar text-muted text-center hidden-xs hidden-sm">
+            <p>
+                <strong>Joined:</strong>&nbsp;
+                Jan, 2016
+            </p>
+
+            <p>
+                <strong>Left:</strong>&nbsp;
+                Apr, 2017
+            </p>
+            <p>
+                <i class="fa fa-clock-o icon-left"></i>
+                1 Year 3 Months
+
+            </p>
+        </div>
+    </li>
+    <li class="card card-nested clearfix">
+        <div class="content has-sidebar">
+            <p class="clear-margin-sm">
+                <strong>Linux System Administrator</strong>,&nbsp;Wellbridge
+            </p>
+            <p class="text-muted visible-xs visible-sm">
+                <small>
+                  <span class="space-right">
+                    Apr, 2009 -
+                    Dec, 2015
+                </span>
+
+                <span>
+                  <i class="fa fa-clock-o icon-left"></i>
+                  6 years 6 months
+              </span>
+          </small>
+      </p>
+      <p>
+      </p>
+      <ul>
+            <li>
+                Created modules in C++ to better user interactions
+            </li>
+            <li>
+                Experience in the support of fundamental technologies such as DNS, SFTP and FTP,
+                SMTP, SNMP, SSL, SSH, TCP, UDP, TFTP, and DHCP
+            </li>
+            <li>
+                Extensively used Python to automate tasks
+            </li>
+            <li>
+              Migrated from Hyper-V to HPE Simplivity hyper-converge running ESXi 6.7 configured in a stretched cluster over a fiber connection for geographic separation
+          </li>
+          <li>
+            Expertise in Linux system installation, configuration, administration,
+            development and testing of backup and recovery methodologies
+        </li>
+        <li>
+            Setup entirely new server rack to run Oracle VM replacing Hyper-V servers
+        </li>
+    </ul>
+</div>
+
+<div class="sidebar text-muted text-center hidden-xs hidden-sm">
+    <p>
+        <strong>Joined:</strong>&nbsp;
+        Apr, 2009
+    </p>
+
+    <p>
+        <strong>Left:</strong>&nbsp;
+        Dec, 2015
+    </p>
+    <p>
+        <i class="fa fa-clock-o icon-left"></i>
+        6 years 6 months
+    </p>
+</div>
+</li>
+<li class="card card-nested clearfix">
+    <div class="content has-sidebar">
+        <p class="clear-margin-sm">
+            <strong>Frontend Web Developer</strong>,&nbsp;Tek Systems
+        </p>
+        <p class="text-muted visible-xs visible-sm">
+            <small>
+              <span class="space-right">
+                May, 2007 -
+                Apr, 2009
+            </span>
+
+            <span>
+              <i class="fa fa-clock-o icon-left"></i>
+              1 year 11 months
+          </span>
+      </small>
+  </p>
+  <p></p>
+  <ul>
+    <li>
+        Provided solutions and technical guidance to clients facing technical
+        issues and difficulties.
+    </li>
+    <li>
+        Installed and configured IT network components and assisted in the
+        implementation of designed IT network configuration.
+    </li>
+    <li>
+        Take part in the redesigning of applications and other software
+    </li>
+    <li>
+        Communicate electronically and personally with computer end users
+        experiencing problems in order to identify and document problem
+    </li>
+</ul>
+</div>
+
+<div class="sidebar text-muted text-center hidden-xs hidden-sm">
+    <p>
+        <strong>Joined:</strong>&nbsp;
+        May, 2007
+    </p>
+
+    <p>
+        <strong>Left:</strong>&nbsp;
+        Apr, 2009
+    </p>
+    <p>
+        <i class="fa fa-clock-o icon-left"></i>
+        1 year 11 months
+    </p>
+</div>
+</li>
+<!-- <li class="card card-nested clearfix">
+    <div class="content has-sidebar">
+        <p class="clear-margin-sm">
+            <strong>Contract PC Technician</strong>,&nbsp;Tek Systems
+        </p>
+        <p class="text-muted visible-xs visible-sm">
+            <small>
+              <span class="space-right">
+                May, 2007 -
+                Apr, 2009
+            </span>
+
+            <span>
+              <i class="fa fa-clock-o icon-left"></i>
+              1 year 11 months
+          </span>
+      </small>
+  </p>
+  <p></p>
+  <ul>
+    <li>
+        Implemented interfaces connecting legacy components to the existing
+        enterprise infrastructure
+    </li>
+    <li>
+        Optimized existing software products to considerably enhance performance
+    </li>
+    <li>
+        Setup, and optimized LAN systems, on networks ranging from 50 units, to
+        as large as 1000+
+    </li>
+    <li>
+        Configured user accounts on large business networks
+    </li>
+    <li>
+        Removed network wide virus/malware infection
+    </li> -->
+</ul>
+</div>
+
+<!-- <div class="sidebar text-muted text-center hidden-xs hidden-sm">
+    <p>
+        <strong>Joined:</strong>&nbsp;
+        May, 2007
+    </p>
+    <p>
+        <strong>Left:</strong>&nbsp;
+        Apr, 2009
+    </p>
+    <p>
+        <i class="fa fa-clock-o icon-left"></i>
+        1 year 11 months
+    </p>
+</div> -->
+</li>
+</ul>
+</div>
+</div>
+<div class="detail" id="skills">
+    <div class="icon">
+        <i class="fa fa-lg fa-code"></i>
+        <span class="mobile-title">Skills</span>
     </div>
+    <div class="info">
+        <h4 class="title text-uppercase">
+            Skills
+        </h4>
+
+        <div class="content">
+            <ul class="list-unstyled">
+                <li class="card card-nested card-skills">
+                    <div class="skill-info">
+                        <strong>Software Engineering</strong>
+                        <div class="space-top labels">
+                           <span class="label label-keyword">Jenkins</span>
+                           <span class="label label-keyword">CI/CD Git Pipelines</span>
+                           <span class="label label-keyword">Selenium</span>
+                           <span class="label label-keyword">OpenShift</span>
+                           <span class="label label-keyword">Ansible</span>
+                           <span class="label label-keyword">Azure</span>
+                           <span class="label label-keyword">Docker-Compose</span>
+                           <span class="label label-keyword">VSphere</span>
+                           <span class="label label-keyword">Docker</span>
+                           <span class="label label-keyword">Kubernetes</span>
+                           <span class="label label-keyword">Mongo DB</span>
+                           <span class="label label-keyword">GitLab</span>
+                           <span class="label label-keyword">Node.js</span>
+                           <span class="label label-keyword">Meteor.js</span>
+                           <span class="label label-keyword">Python</span>
+                           <span class="label label-keyword">PHP</span>
+                           <span class="label label-keyword">C++</span>
+                           <span class="label label-keyword">JavaScript</span>
+                           <span class="label label-keyword">MSSQL</span>
+                           <span class="label label-keyword">MySQL</span>
+                           <span class="label label-keyword">Oracle SQL</span>
+                           <span class="label label-keyword">SQL</span>
+                           <span class="label label-keyword">CSS</span>
+                           <span class="label label-keyword">Bootstrap</span>
+                           <span class="label label-keyword">Linux</span>
+                           <span class="label label-keyword">Git</span>
+                           <span class="label label-keyword">Laravel</span>
+                           <span class="label label-keyword">CakePHP</span>
+                           <span class="label label-keyword">Backbone.js</span>
+                           <span class="label label-keyword">Angular</span>
+                           <span class="label label-keyword">Debian Linux</span>
+                           <span class="label label-keyword">Visual Studio</span>
+                           <span class="label label-keyword">Jquery</span>
+                           <span class="label label-keyword">JSON</span>
+                           <span class="label label-keyword">XML</span>
+                           <span class="label label-keyword">YAML</span>
+                       </div>
+                   </div>
+               </li>
+           </div>
+       </li>
+   </ul>
+</div>
+</div>
+</div>
+<!-- <div class="detail" id="education">
+    <div class="icon">
+        <i class="fa fa-lg fa-mortar-board"></i>
+        <span class="mobile-title">Education</span>
+    </div>
+    <div class="info">
+        <h4 class="title text-uppercase">
+            Education
+        </h4>
+        <div class="content">
+            <ul class="list-unstyled">
+                <li class="card card-nested">
+                    <div class="content has-sidebar">
+                        <p class="clear-margin-sm">
+                            <strong>Pursued Bachelor of Science in Communication</strong>,&nbsp;
+                            University of New Mexico
+                        </p>
+                        <p class="visible-xs visible-sm text-muted">
+                            <small>
+                                Jul, 2003
+                            </small>
+                        </p>
+                        <i></i>
+                        <div class="space-top labels">
+                        </div>
+                    </div>
+                    <div class="sidebar text-muted text-center hidden-xs hidden-sm">
+                        <p>
+                            <strong>Started:</strong>&nbsp;
+                            Jul, 2003
+                        </p> -->
+                        <!--                                            <p>-->
+                            <!--                                                <strong>Completion:</strong>&nbsp;-->
+                            <!--                                            </p>-->
+ <!--                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div> -->
+</div>
+</section>
+</div>
 </div>
 <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
